@@ -1,0 +1,127 @@
+
+body {
+  padding-top: 50px;
+}
+
+.navbar--apple {
+  width: 100%;
+  padding: 0;
+
+	&.navbar {
+
+		.logo {
+		  font-size: 21px;
+		  line-height: 0;
+		}
+
+		.navbar__logo {
+		  z-index: 99999;
+		  position: fixed;
+		  left: 0;
+		  right: 0;
+		  margin: auto;
+		  width: fit-content;
+		  line-height: 2.4rem;
+		  top: 0;
+		}
+
+		.nav-link {
+		  color: #ffffff !important;
+		  font-size: 13px;
+		}
+
+		nav {
+			background-color: initial !important;
+      width: 100%;
+      padding: 0;
+      line-height: 2;
+
+			&::before {
+			  background: rgba(0,0,0,0.8);
+			  transition: height 0.2s ease-in;
+			  height: 48px;
+			  position: fixed;
+			  left: 0;
+			  right: 0;
+        top: 0;
+        bottom: 0;
+			  content: '';
+			  z-index: -1;
+			}
+
+			.navbar-toggler {
+			  padding: 0.75rem;
+			  font-size: 1.25rem;
+			  line-height: 1;
+			  border: 0;
+			  border-radius: 0;
+			  outline: none;
+
+				.navbar-toggler-icon {
+				  background-image: none;
+				}
+			}
+
+
+			#menu {
+				padding-left: 40px;
+				padding-right: 40px;
+
+				li a {
+					font-size: 17px;
+					border-bottom: 1px solid rgba(255,255,255,0.1);
+				}
+			}
+		}
+	}
+}
+
+.navbar--opened {
+
+	.navbar--apple {
+
+		&.navbar {
+
+			nav {
+				&::before {
+				  height: 100%;
+					background: rgba(0,0,0,0.93);
+				}
+			}
+		}
+	}
+}
+
+
+@include media-breakpoint-up(md) {
+
+  .navbar--apple {
+    &.navbar {
+      nav #menu {
+        padding-left: 0;
+        padding-right: 0;
+    	  li a {
+    		font-size: 13px;
+    		border-bottom: 0;
+    	  }
+      }
+
+      .navbar__logo {
+        display: none;
+      }
+
+      .navbar::before {
+        height: 50px !important;
+        bottom: initial;
+        top: initial;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+
+  .logged-in .navbar--apple {
+      padding-top: 31px;
+  }
+}

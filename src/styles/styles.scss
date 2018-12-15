@@ -1,0 +1,25 @@
+/*!
+    Theme Name: Apple
+    Theme URI: https://craigmroberts.com/themes/wordpress/apple/
+    Description: This is an apple worpdress theme
+    Version: 1.0.0
+    Author: Craig M Roberts (craigmroberts)
+    Author URI: https://craigmroberts.com/
+    Tags: Gulp, SCSS, Babel
+
+    License: MIT
+    License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../vendors/fontawesome-free/scss/fontawesome.scss";
+@import "../vendors/fontawesome-free/scss/solid.scss";
+@import "../vendors/fontawesome-free/scss/brands.scss";
+
+@import "../vendors/line-awesome/css/line-awesome.min.css";
+
+// Add core wordpress styles
+@import "./core/styles";
+
+// Add custom styles
+@import "./custom/styles";

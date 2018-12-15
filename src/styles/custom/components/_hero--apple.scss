@@ -1,0 +1,82 @@
+
+.margin-t-50 {
+	margin-top: 50px !important;
+}
+
+.hero--apple {
+
+	&.hero {
+		padding-top: 100px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-bottom: 10px;
+		text-align: center;
+		color: $black;
+
+		h1, h2 {
+			font-size: 32px;
+			font-weight: 600;
+			letter-spacing: .004em;
+		}
+
+		h3 {
+			font-size: 19px;
+			font-weight: 400;
+		}
+
+		a {
+			color: $linksBlue;
+		}
+
+		&.dark {
+			color: $white;
+
+			a {
+				color: $white;
+			}
+		}
+
+		.links {
+			font-size: 19px;
+			font-weight: 400;
+			letter-spacing: .012em;
+
+			.learn-more {
+				margin-right: 20px;
+			}
+		}
+		
+		&--bg-white2 {
+			background-color: $white2;
+		}
+
+		&--bg-grey {
+			background-color: $grey;
+		}
+
+		&--bg-black {
+			background-color: $black;
+		}	
+	}
+}
+
+@include media-breakpoint-up(md) {
+	
+	.hero.hero--apple {
+		text-align: center;
+
+		h1, h2 {
+			font-size: 44px;
+			letter-spacing: -.002em;
+		}
+
+		h3 {
+			font-size: 24px;
+		}		
+		
+		.links {
+			font-size: 21px;
+			letter-spacing: .011em;
+		}
+	}
+}

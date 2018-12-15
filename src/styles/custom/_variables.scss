@@ -1,0 +1,11 @@
+// Google fonts that we will be using. To use = font-family: Kavoon;
+$fonts: Roboto, Montserrat, Source Sans, Lato, Source Sans Pro;
+@include googleFonts($fonts);
+
+
+// COLOURS
+$linksBlue: #0070c9;
+$white: #fff;
+$white2: #f9f9f9;
+$grey: #f4f4f4;
+$black: #131218;
