@@ -8,7 +8,8 @@ gulp.task('build',
       'styles',
       'scripts',
       'fonts',
-      'images'
+      'images',
+      'svg'
     )
   )
 );

@@ -47,6 +47,54 @@ if ( ! function_exists( 'bare_setup' ) ) :
 			'menu-1' => esc_html__( 'Primary', 'bare' ),
 		) );
 
+
+
+
+
+
+		class IBenic_Walker extends Walker_Nav_Menu {
+
+			// Displays start of an element. E.g '<li> Item Name'
+				// @see Walker::start_el()
+				function start_el(&$output, $item, $depth=0, $args=array(), $id = 0) {
+					$object = $item->object;
+					$type = $item->type;
+					$title = $item->title;
+					$description = $item->description;
+					$permalink = $item->url;
+
+					$output .= "<li class='nav-item " .  implode(" ", $item->classes) . "' role='presentation'>";
+
+					//Add SPAN if no Permalink
+					if( $permalink && $permalink != '#' ) {
+						$output .= '<a href="' . $permalink . '" class="nav-link">';
+					} else {
+						$output .= '<span>';
+					}
+
+					if ($title === 'Home') {
+						$output .= '<i class="fab fa-apple logo"></i>';
+					}
+					if ($title === 'Bag') {
+						$output .= '<i class="fa fa-shopping-bag"></i>';
+					}
+
+					if ($title !== 'Home' && $title !== 'Bag') {
+						$output .= $title;
+					}
+
+					if( $description != '' && $depth == 0 ) {
+						$output .= '<small class="description">' . $description . '</small>';
+					}
+
+					if( $permalink && $permalink != '#' ) {
+						$output .= '</a>';
+					} else {
+						$output .= '</span>';
+					}
+				}
+		}
+
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.

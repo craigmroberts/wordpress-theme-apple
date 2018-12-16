@@ -17,6 +17,10 @@ gulp.task('watch', function() {
     browserSync.reload();
   });
 
+  // SVG file changes
+  gulp.watch(cons.src + '/svg/**/*', gulp.series('svg','svgInject'), function() {
+  });
+
   // PHP file changes
   gulp.watch(cons.src + '/templates/**/*', gulp.series('php','phpInject'), function() {
   });
@@ -31,6 +35,11 @@ gulp.task('watch', function() {
 });
 
 gulp.task('phpInject', function() {
+    return gulp.src(cons.dist + '/**/*')
+      .pipe(browserSync.stream());
+});
+
+gulp.task('svgInject', function() {
     return gulp.src(cons.dist + '/**/*')
       .pipe(browserSync.stream());
 });

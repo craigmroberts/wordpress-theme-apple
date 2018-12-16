@@ -1,0 +1,195 @@
+.nav-horizontal {
+    background: rgba(242,242,242,0.7);
+    overflow: hidden;
+    padding: 0;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 115px;
+    margin-top: 48px;
+
+	&__wrapper {
+		position: relative;
+		height: 100%;
+		z-index: 1
+	}
+
+	&__items {
+		list-style: none;
+		margin: 0;
+		overflow-x: auto;
+		overflow-y: hidden;
+		-webkit-overflow-scrolling: touch;
+		padding-bottom: 50px;
+		padding-left: 34px;
+		padding-right: 34px;
+		white-space: nowrap;
+
+		@include media-breakpoint-up(md) {
+			margin: 0 34px;
+		}
+	}
+
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 -.11765em;
+		padding: 0 20px;
+
+		&:first-child {
+			margin-left: 0;
+			padding-left: 4px
+		}
+
+		&:last-child {
+			margin-right: 0;
+			padding-irght: 4px
+		}
+	}
+
+	&__link {
+
+		&.active {
+
+		}
+	}
+
+	&__label {
+		font-size: 11px;
+		line-height: 1.09091;
+		font-weight: 400;
+		letter-spacing: -.008em;
+		font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+		display: block;
+		margin: 0
+	}
+
+	&__new {
+		font-size: 9px;
+		line-height: 1.22226;
+		font-weight: 400;
+		letter-spacing: -.006em;
+		font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+		color: #ef5602;
+		display: block;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%
+	}
+
+
+	&__link {
+		color: #111;
+		display: block;
+		margin-top: 3px;
+		padding: 0;
+		position: relative;
+		z-index: 1
+	}
+
+	&__link:hover {
+		color: #0070c9;
+		text-decoration: none
+	}
+
+	&__link:focus {
+		outline-offset: 0
+	}
+
+	&__link.current {
+		color: #111;
+		cursor: default;
+		opacity: .6
+	}
+
+	&__icon {
+		background: center bottom no-repeat;
+		display: block;
+		margin: 0 auto 6px;
+		height: 54px
+	}
+
+	&__item--macbook .nav-horizontal__icon {
+		width: 46px;
+		height: 54px;
+		background-size: 46px 54px;
+		background-repeat: no-repeat;
+		background-image: url("./svg/macbook.svg")
+	}
+
+	&__item--macbook-air .nav-horizontal__icon {
+		width: 52px;
+		height: 54px;
+		background-size: 52px 54px;
+		background-repeat: no-repeat;
+		background-image: url("./svg/macbook-air.svg")
+	}
+
+	&__item--macbook-pro .nav-horizontal__icon {
+		width: 58px;
+		height: 54px;
+		background-size: 58px 54px;
+		background-repeat: no-repeat;
+		background-image: url("./svg/macbook-pro.svg")
+	}
+
+	&__item--imac .nav-horizontal__icon {
+		width: 48px;
+		height: 54px;
+		background-size: 48px 54px;
+		background-repeat: no-repeat;
+		background-image: url("./svg/imac.svg")
+	}
+
+	&__item--imac-pro .nav-horizontal__icon {
+		width: 48px;
+		height: 54px;
+		background-size: 48px 54px;
+		background-repeat: no-repeat;
+		background-image: url("./svg/imac-pro.svg")
+	}
+
+	&__item--mac-pro .nav-horizontal__icon {
+		width: 21px;
+		height: 54px;
+		background-size: 21px 54px;
+		background-repeat: no-repeat;
+		background-image: url("./svg/mac-pro.svg")
+	}
+
+	&__item--mac-mini .nav-horizontal__icon {
+		width: 28px;
+		height: 54px;
+		background-size: 28px 54px;
+		background-repeat: no-repeat;
+		background-image: url("./svg/mac-mini.svg")
+	}
+
+	&__item--accessories .nav-horizontal__icon {
+		width: 29px;
+		height: 54px;
+		background-size: 29px 54px;
+		background-repeat: no-repeat;
+		background-image: url("./svg/accessories.svg")
+	}
+
+	&__item--mac-os .nav-horizontal__icon {
+		width: 42px;
+		height: 54px;
+		background-size: 42px 54px;
+		background-repeat: no-repeat;
+		background-image: url("./svg/mac-os.svg")
+	}
+
+	&__item--compare .nav-horizontal__icon {
+		width: 70px;
+		height: 54px;
+		background-size: 70px 54px;
+		background-repeat: no-repeat;
+		background-image: url("./svg/compare.svg")
+	}
+
+}

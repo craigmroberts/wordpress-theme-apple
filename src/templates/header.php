@@ -27,20 +27,17 @@
 	<div class="navbar navbar--apple fixed-top"><div class="navbar__logo"><a href="#" class="nav-link"><i class="fab fa-apple logo"></i></a></div>
 			<nav class="navbar navbar-dark navbar-expand-md bg-dark">
 					<div class="container"><button class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"><i class="la la-navicon"></i></span></button>
-							<div class="collapse navbar-collapse" id="menu">
-									<ul class="nav navbar-nav flex-grow-1 justify-content-between">
-											<li class="nav-item d-none d-xs-block d-md-block" role="presentation"><a class="nav-link" href="#"><i class="fab fa-apple logo"></i></a></li>
-											<li class="nav-item" role="presentation"><a class="nav-link" href="#">Mac</a></li>
-											<li class="nav-item" role="presentation"><a class="nav-link" href="#">iPad</a></li>
-											<li class="nav-item" role="presentation"><a class="nav-link" href="#">iPhone</a></li>
-											<li class="nav-item" role="presentation"><a class="nav-link" href="#">Watch</a></li>
-											<li class="nav-item" role="presentation"><a class="nav-link" href="#">TV</a></li>
-											<li class="nav-item" role="presentation"><a class="nav-link" href="#">Music</a></li>
-											<li class="nav-item" role="presentation"><a class="nav-link" href="#">Support</a></li>
-											<li class="nav-item d-none d-xs-block d-md-block" role="presentation"><a class="nav-link" href="#"><i class="icon ion-ios-search-strong"></i></a></li>
-											<li class="nav-item d-none d-xs-block d-md-block" role="presentation"><a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i></a></li>
-									</ul>
-							</div>
+
+							<?php
+							wp_nav_menu( array(
+								'menu' => 'main',
+								'items_wrap' => '<ul id="%1$s<" class="nav navbar-nav flex-grow-1 justify-content-between">%3$s</ul>',
+								'walker' => new IBenic_Walker(),
+								'container' => 'div',
+								'container_id' => 'menu',
+								'container_class' => 'collapse navbar-collapse'
+							));
+							?>
 					</div>
 			</nav>
 	</div>
