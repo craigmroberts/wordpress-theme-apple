@@ -17,8 +17,8 @@ gulp.task('watch', function() {
     browserSync.reload();
   });
 
-  // SVG file changes
-  gulp.watch(cons.src + '/svg/**/*', gulp.series('svg','svgInject'), function() {
+  // Sprites file changes
+  gulp.watch(cons.src + '/sprites/**/*', gulp.series('sprites','cssInject'), function() {
   });
 
   // PHP file changes
@@ -35,11 +35,6 @@ gulp.task('watch', function() {
 });
 
 gulp.task('phpInject', function() {
-    return gulp.src(cons.dist + '/**/*')
-      .pipe(browserSync.stream());
-});
-
-gulp.task('svgInject', function() {
     return gulp.src(cons.dist + '/**/*')
       .pipe(browserSync.stream());
 });

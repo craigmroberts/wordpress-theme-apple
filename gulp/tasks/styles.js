@@ -24,7 +24,7 @@ var css = {
 };
 
 // CSS processing
-gulp.task('styles', gulp.series(function () {
+gulp.task('styles', function() {
 
   return gulp.src(css.src)
     .pipe(sass(css.sassOpts)
@@ -39,4 +39,4 @@ gulp.task('styles', gulp.series(function () {
     .pipe(gulp.dest(cons.dist + '/'))        // Save to the dist directory
     .pipe(gulp.dest(css.build))
     .pipe(browserSync.stream());
-}));
+});

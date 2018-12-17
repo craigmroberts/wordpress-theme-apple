@@ -14,7 +14,10 @@
       	<header class="entry-header">
       		<?php the_title( '<h1 class="entry-title visuallyhidden">', '</h1>' ); ?>
       	</header><!-- .entry-header -->
-      	<?php get_template_part( 'template-parts/menu-nav-horizontal', 'none' ); ?>
+      	<?php
+        include(locate_template('template-parts/menu-nav-horizontal.php'));
+        //get_template_part( 'template-parts/menu-nav-horizontal', 'none' );
+        ?>
       	<?php bare_post_thumbnail(); ?>
 
       	<div class="entry-content">

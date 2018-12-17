@@ -31,8 +31,8 @@
 							<?php
 							wp_nav_menu( array(
 								'menu' => 'main',
-								'items_wrap' => '<ul id="%1$s<" class="nav navbar-nav flex-grow-1 justify-content-between">%3$s</ul>',
-								'walker' => new IBenic_Walker(),
+								'items_wrap' => '<ul id="%1$s" class="nav navbar-nav flex-grow-1 justify-content-between">%3$s</ul>',
+								'walker' => new Main_Menu_Walker(),
 								'container' => 'div',
 								'container_id' => 'menu',
 								'container_class' => 'collapse navbar-collapse'

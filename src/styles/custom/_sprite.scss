@@ -1,0 +1,75 @@
+/*  * Do not edit modules/_sprite.css directly as it is generated automatically by gulp
+    * Instead edit gulp/templates/sprite
+*/
+
+    .icon {
+        background-image: url('./sprites/sprite-b807e422.svg');
+    }
+    .no-svg .icon {
+        background-image: url('./sprites/sprite-b807e422.png');
+    }
+    .icon--accessories {
+        width: 28.98px;
+        height: 54px;
+        background-position: 99.98666844420744% 0;
+    }
+    .icon--compare {
+        width: 70px;
+        height: 54px;
+        background-position: 0 0;
+    }
+    .icon--imac {
+        width: 48px;
+        height: 54px;
+        background-position: 0 50%;
+    }
+    .icon--imac-pro {
+        width: 48px;
+        height: 54px;
+        background-position: 36.6412213740458% 50%;
+    }
+    .icon--ipad {
+        width: 28px;
+        height: 54px;
+        background-position: 63.57615894039735% 50%;
+    }
+    .icon--ipad-mini {
+        width: 22px;
+        height: 54px;
+        background-position: 81.52866242038216% 0;
+    }
+    .icon--ipad-pro {
+        width: 30px;
+        height: 54px;
+        background-position: 93.95973154362416% 100%;
+    }
+    .icon--mac-mini {
+        width: 28px;
+        height: 54px;
+        background-position: 99.33774834437087% 50%;
+    }
+    .icon--mac-os {
+        width: 42px;
+        height: 54px;
+        background-position: 0 100%;
+    }
+    .icon--mac-pro {
+        width: 21px;
+        height: 54px;
+        background-position: 81.0126582278481% 50%;
+    }
+    .icon--macbook {
+        width: 46px;
+        height: 54px;
+        background-position: 31.57894736842105% 100%;
+    }
+    .icon--macbook-air {
+        width: 52px;
+        height: 54px;
+        background-position: 69.29133858267717% 100%;
+    }
+    .icon--macbook-pro {
+        width: 58px;
+        height: 54px;
+        background-position: 57.85123966942149% 0;
+    }

@@ -47,12 +47,12 @@ if ( ! function_exists( 'bare_setup' ) ) :
 			'menu-1' => esc_html__( 'Primary', 'bare' ),
 		) );
 
+		register_nav_menus( array(
+			'product-category' => esc_html__( 'Product Category', 'bare' ),
+		) );
 
 
-
-
-
-		class IBenic_Walker extends Walker_Nav_Menu {
+		class Main_Menu_Walker extends Walker_Nav_Menu {
 
 			// Displays start of an element. E.g '<li> Item Name'
 				// @see Walker::start_el()
@@ -94,6 +94,58 @@ if ( ! function_exists( 'bare_setup' ) ) :
 					}
 				}
 		}
+
+		class Product_Category_Walker extends Walker_Nav_Menu {
+
+			// Displays start of an element. E.g '<li> Item Name'
+				// @see Walker::start_el()
+				function start_el(&$output, $item, $depth=0, $args=array(), $id = 0) {
+					$object = $item->object;
+					$type = $item->type;
+					$title = $item->title;
+					$description = $item->description;
+					$permalink = $item->url;
+
+					$output .= "<li class='nav-horizontal__item' role='presentation'>";
+
+					//Add SPAN if no Permalink
+					if( $permalink && $permalink != '#' ) {
+						$output .= '<a href="' . $permalink . '" class="nav-horizontal__link">';
+					} else {
+						$output .= '<span>';
+					}
+
+					$output .= "<figure class='nav-horizontal__icon icon " .  implode(" ", $item->classes) . "'></figure>";
+					$output .= '<span class="nav-horizontal__label" role="text">' . $title . '</span>';
+
+					if( $description != '' && $depth == 0 ) {
+						$output .= '<small class="description">' . $description . '</small>';
+					}
+
+					if( $permalink && $permalink != '#' ) {
+						$output .= '</a>';
+					} else {
+						$output .= '</span>';
+					}
+				}
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 		/*
 		 * Switch default core markup for search form, comment form, and comments
@@ -170,12 +222,12 @@ add_action( 'widgets_init', 'bare_widgets_init' );
 function bare_scripts() {
 	wp_enqueue_style( 'bare-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'bare-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	//wp_enqueue_script( 'bare-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'bare-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+	//wp_enqueue_script( 'bare-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-		wp_enqueue_script( 'comment-reply' );
+		//wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'bare_scripts' );
