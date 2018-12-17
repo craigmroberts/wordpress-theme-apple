@@ -1,7 +1,9 @@
 var cons = {
+  themeDirName : 'apple',
   src : './src',
-  dist : '/Users/craigmorganroberts/Documents/projects/wordpress/core/wp-content/themes/apple', // './dist'
+  dist : './public/wp-content/themes/apple', // './dist'
   temp : './temp',
+  public : './public',
   assets : '/' // assets directory
 }
 

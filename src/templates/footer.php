@@ -22,42 +22,16 @@
 					<section class="footer__directory">
 							<div class="row">
 									<div class="col-md-3">
-											<h4 class="no-border"><a href="#collapseFootNav1" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseFootNav1">Shop and Learn</a></h4>
-											<ul class="nav nav-tabs footer-links collapse" id="collapseFootNav1">
-													<li class="nav-item"><a class="nav-link active" href="#">Mac</a></li>
-													<li class="nav-item"><a class="nav-link" href="#">iPad</a></li>
-													<li class="nav-item"><a class="nav-link" href="#">iPhone</a></li>
-											</ul>
+										<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer_col_1') ) : endif; ?>
 									</div>
 									<div class="col-md-3">
-											<h4><a href="#collapseFootNav2" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseFootNav2">Apple Store</a></h4>
-											<ul class="nav nav-tabs footer-links collapse" id="collapseFootNav2">
-													<li class="nav-item"><a class="nav-link active" href="#">Mac</a></li>
-													<li class="nav-item"><a class="nav-link" href="#">iPad</a></li>
-													<li class="nav-item"><a class="nav-link" href="#">iPhone</a></li>
-											</ul>
+										<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer_col_2') ) : endif; ?>
 									</div>
 									<div class="col-md-3">
-											<h4><a href="#collapseFootNav3" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseFootNav3">For Education</a></h4>
-											<ul class="nav nav-tabs footer-links collapse" id="collapseFootNav3">
-													<li class="nav-item"><a class="nav-link active" href="#">Mac</a></li>
-													<li class="nav-item"><a class="nav-link" href="#">iPad</a></li>
-													<li class="nav-item"><a class="nav-link" href="#">iPhone</a></li>
-											</ul>
+										<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer_col_3') ) : endif; ?>
 									</div>
 									<div class="col-md-3">
-											<h4><a href="#collapseFootNav4" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseFootNav4">Account</a></h4>
-											<ul class="nav nav-tabs footer-links collapse" id="collapseFootNav4">
-													<li class="nav-item"><a class="nav-link active" href="#">Mac</a></li>
-													<li class="nav-item"><a class="nav-link" href="#">iPad</a></li>
-													<li class="nav-item"><a class="nav-link" href="#">iPhone</a></li>
-											</ul>
-											<h4><a href="#collapseFootNav4" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseFootNav4">Apple Values</a></h4>
-											<ul class="nav nav-tabs footer-links collapse" id="collapseFootNav4">
-													<li class="nav-item"><a class="nav-link active" href="#">Mac</a></li>
-													<li class="nav-item"><a class="nav-link" href="#">iPad</a></li>
-													<li class="nav-item"><a class="nav-link" href="#">iPhone</a></li>
-											</ul>
+										<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer_col_4') ) : endif; ?>
 									</div>
 							</div>
 					</section>
@@ -67,18 +41,7 @@
 									<p class="d-inline-block">Copyright © 2018. All rights reserved.<br></p>
 							</div>
 							<div class="d-inline-block legal-links">
-									<div class="d-inline-block item">
-											<h5>Privacy Policy</h5>
-									</div>
-									<div class="d-inline-block item">
-											<h5>Terms of Use</h5>
-									</div>
-									<div class="d-inline-block item">
-											<h5>Legal</h5>
-									</div>
-									<div class="d-inline-block item">
-											<h5>License</h5>
-									</div>
+									<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer_bottom_links') ) : endif; ?>
 							</div>
 					</div>
 			</div>

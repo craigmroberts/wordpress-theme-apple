@@ -10,4 +10,5 @@ require('./gulp/tasks/fonts');
 require('./gulp/tasks/php');
 require('./gulp/tasks/deleteDistFolder');
 require('./gulp/tasks/build');
+require('./gulp/tasks/wordpress');
 require('./gulp/tasks/default');

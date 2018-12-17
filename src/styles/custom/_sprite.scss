@@ -3,73 +3,168 @@
 */
 
     .icon {
-        background-image: url('./sprites/sprite-b807e422.svg');
+        background-image: url('./sprites/sprite-dee77da6.svg');
     }
     .no-svg .icon {
-        background-image: url('./sprites/sprite-b807e422.png');
+        background-image: url('./sprites/sprite-dee77da6.png');
     }
-    .icon--accessories {
-        width: 28.98px;
+    .icon--airpods {
+        width: 23px;
         height: 54px;
-        background-position: 99.98666844420744% 0;
+        background-position: 81.73049645390071% 25%;
     }
-    .icon--compare {
-        width: 70px;
+    .icon--apple-pencil {
+        width: 2.5px;
         height: 54px;
-        background-position: 0 0;
+        background-position: 75.36528925619835% 25%;
     }
     .icon--imac {
         width: 48px;
         height: 54px;
-        background-position: 0 50%;
+        background-position: 62.64591439688716% 75%;
     }
-    .icon--imac-pro {
+    .icon--imac--pro {
         width: 48px;
         height: 54px;
-        background-position: 36.6412213740458% 50%;
+        background-position: 99.99221789883268% 0;
+    }
+    .icon--ios {
+        width: 32px;
+        height: 54px;
+        background-position: 94.13186813186813% 50%;
     }
     .icon--ipad {
         width: 28px;
         height: 54px;
-        background-position: 63.57615894039735% 50%;
+        background-position: 50.90252707581227% 25%;
     }
-    .icon--ipad-mini {
+    .icon--ipad--accessories {
+        width: 33px;
+        height: 54px;
+        background-position: 0 50%;
+    }
+    .icon--ipad--compare {
+        width: 46px;
+        height: 54px;
+        background-position: 12.741312741312742% 50%;
+    }
+    .icon--ipad--mini {
         width: 22px;
         height: 54px;
-        background-position: 81.52866242038216% 0;
+        background-position: 27.915194346289752% 50%;
     }
-    .icon--ipad-pro {
+    .icon--ipad--pro {
         width: 30px;
         height: 54px;
-        background-position: 93.95973154362416% 100%;
+        background-position: 36.72727272727273% 50%;
     }
-    .icon--mac-mini {
-        width: 28px;
+    .icon--iphone--7 {
+        width: 37px;
         height: 54px;
-        background-position: 99.33774834437087% 50%;
+        background-position: 48.88059701492537% 50%;
     }
-    .icon--mac-os {
-        width: 42px;
+    .icon--iphone--8 {
+        width: 37px;
         height: 54px;
-        background-position: 0 100%;
+        background-position: 63.42537313432836% 0;
     }
-    .icon--mac-pro {
+    .icon--iphone--accessories {
+        width: 31px;
+        height: 54px;
+        background-position: 62.03649635036496% 25%;
+    }
+    .icon--iphone--compare {
+        width: 50px;
+        height: 54px;
+        background-position: 81.1686274509804% 0;
+    }
+    .icon--iphone--xr {
         width: 21px;
         height: 54px;
-        background-position: 81.0126582278481% 50%;
+        background-position: 72.88028169014085% 25%;
+    }
+    .icon--iphone--xs {
+        width: 35px;
+        height: 54px;
+        background-position: 76.65925925925926% 50%;
+    }
+    .icon--mac--accessories {
+        width: 28.98px;
+        height: 54px;
+        background-position: 51.083254836606045% 0;
+    }
+    .icon--mac--compare {
+        width: 70px;
+        height: 54px;
+        background-position: 30.21276595744681% 0;
+    }
+    .icon--mac--mini {
+        width: 28px;
+        height: 54px;
+        background-position: 61.36462093862816% 50%;
+    }
+    .icon--mac--os {
+        width: 42px;
+        height: 54px;
+        background-position: 0 75%;
+    }
+    .icon--mac--pro {
+        width: 21px;
+        height: 54px;
+        background-position: 14.788732394366198% 75%;
     }
     .icon--macbook {
         width: 46px;
         height: 54px;
-        background-position: 31.57894736842105% 100%;
+        background-position: 24.324324324324323% 75%;
     }
-    .icon--macbook-air {
+    .icon--macbook--air {
         width: 52px;
         height: 54px;
-        background-position: 69.29133858267717% 100%;
+        background-position: 43.08300395256917% 75%;
     }
-    .icon--macbook-pro {
+    .icon--macbook--pro {
         width: 58px;
         height: 54px;
-        background-position: 57.85123966942149% 0;
+        background-position: 25.7165991902834% 25%;
+    }
+    .icon--smart-keyboard {
+        width: 63.52px;
+        height: 54px;
+        background-position: 0 25%;
+    }
+    .icon--watch {
+        width: 25px;
+        height: 54px;
+        background-position: 91.77857142857142% 25%;
+    }
+    .icon--watch--accessories {
+        width: 52px;
+        height: 54px;
+        background-position: 0 100%;
+    }
+    .icon--watch--compare {
+        width: 71px;
+        height: 54px;
+        background-position: 0 0;
+    }
+    .icon--watch--hermes {
+        width: 37px;
+        height: 54px;
+        background-position: 95.88805970149254% 75%;
+    }
+    .icon--watch--nike {
+        width: 25px;
+        height: 54px;
+        background-position: 74.64285714285714% 75%;
+    }
+    .icon--watch--os {
+        width: 44px;
+        height: 54px;
+        background-position: 19.92337164750958% 100%;
+    }
+    .icon--watch--straps {
+        width: 17px;
+        height: 54px;
+        background-position: 97.90972222222223% 25%;
     }
